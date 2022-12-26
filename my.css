@@ -1,0 +1,10 @@
+body { background-color:#eaf3sa;
+		}
+/* 整个页面颜色为“淡绿色” */
+
+h1,h2 {
+		color:maroon;}
+/* 一、二级标题为“茶红色” */
+
+h1 { border-bottom:1px solid blak}
+/* 一级标题有一条 1像素宽+黑色+实心 下划线 */
