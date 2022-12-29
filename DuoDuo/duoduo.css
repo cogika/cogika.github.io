@@ -1,0 +1,27 @@
+#top {
+	background-color: #a7cece;
+	padding: 10px;
+	background-image: url(duoduo_icon.jpeg);
+	background-repeat: no-repeat;
+	background-position: right;
+	}
+
+body {
+	font-size: medium;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	line-height: 1.6em;
+	background-color: bisque;
+}
+
+h1,h2 {
+	color: #007e7e;
+}
+
+h1 {
+	font-size: 180%;
+	border-bottom: thick double black;
+}
+
+h2 {
+	font-size: 130%;
+}
