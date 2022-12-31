@@ -25,3 +25,8 @@ h1 {
 	bottom: 10px;
 	right:20px
 }
+
+/*下面规则去掉链接的边框*/
+#back_to_top a,img {
+    border: none;
+}
