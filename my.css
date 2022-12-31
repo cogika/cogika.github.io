@@ -16,3 +16,13 @@ h1 {
 	border-bottom: 1px solid black;
 }
 /* 一级标题有一条 1像素宽+黑色+实心 下划线 */
+
+
+
+
+/*设置back to top按钮*/
+#back_to_top {
+	position: fixed;
+	bottom: 10px;
+	right:20px
+}
