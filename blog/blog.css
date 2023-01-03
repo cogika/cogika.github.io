@@ -1,9 +1,10 @@
 body { 
-  background-color: #b5a789;
+  background: #efe5d0 url(background.gif) top left;
   font-family:      Georgia, "Times New Roman", Times, serif;
   font-size:        medium;
-  margin:           0px;
+  margin:           20px;
 }
+
 
 
 footer {
