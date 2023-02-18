@@ -4,4 +4,7 @@ RAA:
 		......
 			we have our desired contradiction.
 
-dddd
+
+·in the contrapositive direction:
+
+·
