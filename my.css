@@ -17,12 +17,14 @@ h1 {
 /* 一级标题有一条 1像素宽+黑色+实心 下划线 */
 
 
-
+q {
+	color: #212F3C;
+}
 
 /*设置back to top按钮*/
 #back_to_top {
 	position: fixed;
-	bottom: 10px;
+	bottom: 40px;
 	right:20px
 }
 
