@@ -25,7 +25,9 @@ q {
 #back_to_top {
 	position: fixed;
 	bottom: 40px;
-	right:20px
+	right:20px;
+	border: none;
+	
 }
 
 /*下面规则去掉链接的边框*/
