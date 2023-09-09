@@ -1,4 +1,4 @@
 
-利用GitHub搭建的个人网站
+个人主页
 
 [欢迎访问](https://chenxinhello.github.io)
