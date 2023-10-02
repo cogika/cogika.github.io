@@ -1,34 +1,35 @@
-
 html {
 	color-scheme: light dark;
 }
 
 
-body { 
+body {
 	/* 整个页面颜色为“淡绿色” */
 	/*background-color:#eaf3da; */
 	font-family: Monaco;
 	font-size: 16px;
-	
+
 	max-width: 800px;
 	padding: 20px;
 	margin: auto;
 	line-height: 1.5;
-		}
+}
 
 
 
 
 h2 {
-	color:maroon;
+	color: maroon;
 	margin-top: 1.5em;
 }
+
 /* 一、二级标题为“茶红色” */
 
-h1 { 
-	color:maroon;
+h1 {
+	color: maroon;
 	border-bottom: 1px solid black;
 }
+
 /* 一级标题有一条 1像素宽+黑色+实心 下划线 */
 
 
@@ -38,22 +39,32 @@ q {
 
 
 a {
-  color: #CD5C5C  ;
-  text-decoration: none;
+	color: #CD5C5C;
+	text-decoration: none;
 }
-a:hover { color: var(--link-color); text-decoration: underline; text-decoration-style: solid; }
 
-a:visited:hover { color: #fb5012f0; }
+a:hover {
+	color: var(--link-color);
+	text-decoration: underline;
+	text-decoration-style: solid;
+}
+
+a:visited:hover {
+	color: #fb5012f0;
+}
 
 
 
 
 blockquote {
-  font-style: italic;
- /* border: thin solid black; */
-  padding: 0.4rem;
-  text-align: left;
-  p { margin: 0; }
+	font-style: italic;
+	/* border: thin solid black; */
+	padding: 0.4rem;
+	text-align: left;
+
+	p {
+		margin: 0;
+	}
 }
 
 
@@ -61,24 +72,21 @@ blockquote {
 #back_to_top {
 	position: fixed;
 	bottom: 40px;
-	right:20px;
+	right: 20px;
 	border: none;
-	
+
 }
 
 /*下面规则去掉链接的边框*/
-#back_to_top a,img {
-    border: none;
+#back_to_top a,
+img {
+	border: none;
 }
 
 
 .footer {
-    text-align: center;
+	text-align: center;
 	font-size: 14px;
 	color: pink;
 	margin: 10px;
 }
-
-
-
-
