@@ -70,6 +70,18 @@ blockquote {
 }
 
 
+
+.footer {
+	text-align: center;
+	font-size: 14px;
+	color: pink;
+	margin: 10px;
+}
+
+
+
+
+
 /*设置back to top按钮*/
 #back_to_top {
 	position: fixed;
@@ -86,9 +98,17 @@ img {
 }
 
 
-.footer {
-	text-align: center;
-	font-size: 14px;
-	color: pink;
-	margin: 10px;
+/*设置back to bot按钮*/
+#back_to_bot {
+	position: fixed;
+	top: 40px;
+	right: 20px;
+	border: none;
+
+}
+
+/*下面规则去掉链接的边框*/
+#back_to_bot a,
+img {
+	border: none;
 }
