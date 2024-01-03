@@ -74,11 +74,15 @@ blockquote {
 .footer {
 	text-align: center;
 	font-size: 14px;
-	color: pink;
+	color: #BF3B61;
 	margin: 10px;
 }
 
 
+/* 小型大写-字体*/
+.textsc {
+	font-variant-caps: small-caps;
+}
 
 
 
