@@ -4,10 +4,9 @@ html {
 
 
 body {
-	/* 整个页面颜色为“淡绿色” */
-	/*background-color:#eaf3da; */
-	font-family: monospace;
-	/* font-family: 'EB Garamond', 'Noto Serif', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, serif;*/
+	/*background-color:#eaf3da; */ /* 整个页面颜色为“淡绿色” */
+
+	font-family: KaTeX_Main,Times New Roman,serif, Roboto, Verdana, Geneva, Tahoma, sans-serif, PMingLiU;
 
 	font-size: 16px;
 
@@ -41,8 +40,8 @@ q {
 
 
 a {
-	color: #CD5C5C;
-	text-decoration: none;
+	color: #CD5C5C; /* 链接颜色 */
+	text-decoration: none;  
 }
 
 a:hover {
@@ -57,25 +56,28 @@ a:visited:hover {
 
 
 
+blockquote{
+	margin:0 0 1em 0;
+	padding:0 30px;
+	color:#808080
+} 
 
-blockquote {
-	font-style: italic;
-	/* border: thin solid black; */
-	padding: 0.4rem;
-	text-align: left;
 
-	p {
-		margin: 0;
-	}
+
+
+
+footer a {
+	color: #808080;
 }
 
 
-
-.footer {
+footer{
 	text-align: center;
-	font-size: 14px;
-	color: #BF3B61;
-	margin: 10px;
+	margin:0.5em 0 0 0;
+	border-top:5px double #ccc;
+	padding: 0.5em 0 0 0;
+	font-size:80%;
+	color:#999;
 }
 
 
