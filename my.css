@@ -58,12 +58,19 @@ a:visited:hover {
 
 blockquote{
 	margin:0 0 1em 0;
-	padding:0 30px;
+	padding:0 10px;
 	color:#808080
 } 
 
 
+ul {
+	margin-top: 10px;
+	padding-left: 20px;
+}
 
+ol {
+	padding-left: 20px;
+}
 
 
 footer a {
@@ -78,6 +85,10 @@ footer{
 	padding: 0.5em 0 0 0;
 	font-size:80%;
 	color:#999;
+}
+
+figure {
+	text-align: center;
 }
 
 
