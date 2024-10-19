@@ -87,7 +87,7 @@ footer{
 }
 
 
-
+/* ================================== */
 /*设置back to top按钮*/
 #back_to_top {
 	position: fixed;
@@ -97,24 +97,35 @@ footer{
 
 }
 
-/*下面规则去掉链接的边框*/
-#back_to_top a,
-img {
-	border: none;
-}
-
-
 /*设置back to bot按钮*/
 #back_to_bot {
 	position: fixed;
-	top: 40px;
+	top: 10px;
 	right: 10px;
 	border: none;
 
 }
 
+
+/*设置back to bot按钮*/
+#latex {
+	position: fixed;
+	top: 50%;
+	right: 10px;
+	border: none;
+
+}
+/* =============================== */
+
+
 /*下面规则去掉链接的边框*/
 #back_to_bot a,
+img {
+	border: none;
+}
+
+/*下面规则去掉链接的边框*/
+#back_to_top a,
 img {
 	border: none;
 }
