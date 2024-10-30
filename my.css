@@ -5,11 +5,8 @@ html {
 
 body {
 	/*background-color:#eaf3da; */ /* 整个页面颜色为“淡绿色” */
-
 	font-family: KaTeX_Main,Times New Roman,serif, Roboto, Verdana, Geneva, Tahoma, sans-serif, PMingLiU;
-
 	font-size: 16px;
-
 	max-width: 800px;
 	padding: 20px;
 	margin: auto;
