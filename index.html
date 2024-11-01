@@ -17,17 +17,16 @@
 	<link rel="stylesheet" href="my.css" type="text/css">
 
 
-
-	<!--数学公式-->
+	<!--数学公式 =========================================================== 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
 		integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
 
-	<!-- The loading of KaTeX is deferred to speed up page rendering -->
+	
 	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"
 		integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx"
 		crossorigin="anonymous"></script>
 
-	<!-- To automatically render math in text elements, include the auto-render extension: -->
+	
 	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
 		integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
 		onload="renderMathInElement(document.body);">
@@ -46,22 +45,64 @@
 	</script>
 	<script defer src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js"
 		integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script>
-	<!-- 数学公式设置完毕 -->
-
+	数学公式设置完毕 ==================================================== -->
+	<!-- 上面是之前的数学公式设置，现在弃用 -->
 	
 	<!-- 外部中文字体 -->
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
 	</style>
 
+
+	<!-- 下面是对数学公式支持的新设置 -->
+	<script>
+		MathJax = {
+		tex: {
+			inlineMath: [['$','$'], ['\\(','\\)']],
+			processEscapes: true,
+			tags: "ams",
+			autoload: {
+			color: [],
+			colorV2: ['color']
+			},
+			packages: {'[+]': ['noerrors']}
+		},
+		chtml: {
+			matchFontHeight: false,
+			displayAlign: "left",
+			displayIndent: "2em"
+		},
+		options: {
+			renderActions: {
+			find_script_mathtex: [10, function (doc) {
+				for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+				const display = !!node.type.match(/; *mode=display/);
+				const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+				const text = document.createTextNode('');
+				node.parentNode.replaceChild(text, node);
+				math.start = {node: text, delim: '', n: 0};
+				math.end = {node: text, delim: '', n: 0};
+				doc.math.push(math);
+				}
+			}, '']
+			}
+		},
+		loader: {
+			load: ['[tex]/noerrors']
+		}
+		};
+	</script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>
 </head>
 
 
 
 <body>
 
-
-<h1 id="top">您好 Hello  こんにちは  Hola  :) </h1>
+<!-- 欢迎 -->
+<div>
+<h1 id="top">您好 &nbsp; Hello &nbsp; こんにちは &nbsp; Hola  :) </h1>
 <p> 
 	Hey there 👋, this is <b>Xin Chen</b> (陈鑫), 
 	a guy doesn't like to post moments in WeChat,
@@ -86,7 +127,7 @@
 		target="_blank" title="一些笑话">ʕ•́ᴥ•̀ʔっ ♡ ʕ•́ᴥ•̀ʔっ</a>
 	</li>
 </ul>
-
+</div>
 
 
 
@@ -213,7 +254,7 @@
 	
 
 	
-<ul>Misc.:
+<ul><b>Misc.</b>:
 	<li> Modal Logic & Coalgebra </li>
 
 	<li> 直觉主义逻辑与数学 💪💪💪</li>
@@ -265,11 +306,15 @@
 <details><summary>Some Articles</summary>
 <ul>	
 	<li> 
-		阿兰·孔涅：<a>严酷的现实</a> 
+		<a>阿兰·孔涅：严酷的现实</a> 
+		<br>
+		(俺非常非常喜欢这篇文章，是偶然间在网易云的<a href="https://music.163.com/#/program?id=1367128556" target="_blank">这个电台</a>知道的)
 	</li>
 
 	<li> 
-		<a>计算复杂性 50 年：王浩与计算理论</a>
+		<a>计算复杂性 50 年：王浩与计算理论</a> 
+		<br>
+		(对计算复杂性方面上的无知真是俺一生之痛😭) 
 	</li>
 
 	<li>
@@ -317,7 +362,7 @@
 				<img src="image/mimi/mimi_thumb.jpg" alt="a picture for Mimi" width="300"> 
 			</a>
 			<figcaption>
-				cute Mimi &emsp;  \(^\sim\omega^\sim\)
+				cute Mimi &emsp;  $^\sim\omega^\sim$
 			</figcaption>
 		</figure>
 	</p>
@@ -325,10 +370,7 @@
 	<hr>
 	
 	<p>
-		<b>DuoDuo</b> is a very cute kitty, he is my partner, my all tenderness and the fluffy dream!
-		You can click 
-		<a href="https://nixnehc.github.io/misc/duoduo/" target="_blank">here</a> 
-		to find more information about him.
+		<b>DuoDuo</b> is a very cute kitty, he is my partner, my all tenderness and the fluffy dream! You can click <a href="https://nixnehc.github.io/misc/duoduo/" target="_blank">here</a> to find more information about him.
 	</p>
 	<!-- 	
 	小多多是一只可爱的小猫咪，是我的小伙伴，我的软塌塌，我生命中的毛绒绒！
@@ -336,11 +378,11 @@
 	-->
 	<center>
 		<a href="image/duoduo/DuoduoHead01.jpg" target="_blank" title="click for original image">
-			<img src="image/duoduo/DuoduoHead01_thumb.jpg" alt="这是一张多多的小多头" width="280">
+			<img src="image/duoduo/DuoduoHead01_thumb.jpg" alt="这是一张多多的小多头" width="300">
 		</a>
 		<br>
 		<a href="image/duoduo/duoduo-body.jpeg" target="_blank" title="click for original image">
-			<img src="image/duoduo/duoduo-body-thumb.jpeg" alt="这是一张小多头" width="280">
+			<img src="image/duoduo/duoduo-body-thumb.jpeg" alt="这是一张小多头" width="300">
 		</a>
 	</center>
 
@@ -533,7 +575,7 @@
 <ul>	
 	<li>🤩 <b>Logic</b>:
 		<ul>
-			<li><a href="https://www.logicmatters.net" target="_blank" title="Peter Smith的逻辑网站">Logic Matters</a>
+			<li><a href="https://www.logicmatters.net" target="_blank" title="Peter Smith的逻辑博客">Logic Matters</a>
 			</li>
 
 			<li><a href="https://openlogicproject.org" target="_blank" title="很不错的一个项目, 有很多方向的lecture哟">Open Logic
@@ -553,7 +595,10 @@
 			<li><a href="https://www.mcmp.philosophie.uni-muenchen.de/students/math/index.html" target="_blank"
 					title="MCMP: 适合哲学家阅读的数学讲义, 适合数学家阅读的哲学讲义">MCMP</a> 
 					(Learning Mathematical Philosophy: math for philosophers and philosophy for mathematicians) </li>
-
+			
+			<li>
+				<a href="https://www.logicomix.com/en/index.html" target="_blank">logicomix</a> (即「疯狂的罗素」)
+			</li>
 			
 
 			<li>...</li>
@@ -873,10 +918,10 @@ Analytics:
 
 <!-- copyright -->
 <footer>
-	&copy; 2020 - 2024. 
+	&copy; 2020 - 2025. 
 	
 	&emsp;&emsp;
-	Made with 🧡 by Xin. 
+	Made with 🧡 by Xin Chen
 	
 	&emsp;&emsp;
 	Licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
