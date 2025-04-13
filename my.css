@@ -137,3 +137,9 @@ img {
 img {
 	border: none;
 }
+
+
+table, th, td {
+    border:1px solid black;
+    margin: auto;
+  }
