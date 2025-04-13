@@ -1,5 +1,5 @@
 
-***cogica*** = ***c***at/**c**offee + l***ogcia***
+***coogica*** = ***c***at/c**o**ffee + l***ogcia***
 
 ----
 
