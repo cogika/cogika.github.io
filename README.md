@@ -1,5 +1,5 @@
 
-***cogika*** = ***c***at/c**o**ffee + l***ogika***
+***cogika*** $\coloneqq$ ***c***at/c**o**ffee + l***ogika***
 
 ----
 
