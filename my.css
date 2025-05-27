@@ -143,3 +143,11 @@ table, th, td {
     border:1px solid black;
     margin: auto;
   }
+
+
+/* 居中模块 */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

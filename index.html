@@ -13,8 +13,14 @@
 	<!-- 收藏夹显示图标-->
 	<link rel="shortcut icon" href="/icon(256x256).ico" type="image/x-icon">
 
-	<!-- 网页连接到我自定义的CSS样式文件,即 「外部样式表」 -->
+	<!-- 网页连接到我自定义的CSS样式文件, 即「外部样式表」 -->
 	<link rel="stylesheet" href="my.css" type="text/css">
+
+    <!-- 外部中文字体 -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
+	</style>
+
 
 
 	<!--数学公式 =========================================================== 
@@ -48,11 +54,6 @@
 	数学公式设置完毕 ==================================================== -->
 	<!-- 上面是之前的数学公式设置，现在弃用 -->
 	
-	<!-- 外部中文字体 -->
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
-	</style>
-
 
 	<!-- 下面是对数学公式支持的新设置 -->
 	<script>
@@ -133,25 +134,37 @@
 <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->	
 <h2> 🎶 背景音乐 | Background Music  <img src="image/listening-to-music.gif" width=35> </h2>
 
-<center>
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=85014794&bvid=BV1L7411k7r2&cid=731991729&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width=300 ></iframe>
-</center>
+<!-- 注意：<center> 标签已经被 HTML5 标准废弃，不建议用于现代网页 -->
+<div class="center-container">
+<iframe 
+    src="https://player.bilibili.com/player.html?isOutside=true&aid=85014794&bvid=BV1L7411k7r2&autoplay=1&cid=731991729&p=1" 
+    scrolling="no" 
+    border="0" 
+    frameborder="no" 
+    framespacing="0" 
+    allowfullscreen="true" 
+    width=330 >
+</iframe> 
+</div>
+
+
 
 <div>
 <p> 点击播放 | Click to play </p>
 <p> 
-	<b>虚籁</b> 
+	<b>《虚籁》</b>:
 	<br>
 	<iframe 
-		frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 
-		src="//music.163.com/outchain/player?type=2&id=1910062568&auto=1&height=66">
+		frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86
+		src="//music.163.com/outchain/player?type=2&id=1910062568&auto=0&height=66">
 	</iframe>
 </p>
 
 <details> 
     <summary>More</summary>
 
-	<b>佩兰</b> 原古琴曲，刘星中阮移植 (<a href="https://www.bilibili.com/video/BV1C7411A7Sb/" target="_blank">视频</a>)
+	<b>《佩兰》</b> 原古琴曲，刘星中阮移植 (<a href="https://www.bilibili.com/video/BV1C7411A7Sb/" target="_blank">视频</a>)。
+    诗云:
 	「兰之猗猗，扬扬其香。不采而佩，于兰何伤」
 	(唐·韩愈·<a href="https://ctext.org/text.pl?node=172086&if=gb&remap=gb" target="_blank">猗兰操</a>)
 	<br>
@@ -163,10 +176,10 @@
 	<br>
 	<br>
 
-	<b>子衿</b> 原视频见
+	<b>《子衿》</b> 原视频见
 	<a href="https://www.bilibili.com/video/BV1vC4y1h7fj/" target="_blank">UP主</a>。
 	「青青子衿，悠悠我心。纵我不往，子宁不嗣音。青青子佩，悠悠我思。纵我不往，子宁不来？挑兮达兮，在城阙兮。一日不见，如三月兮」
-	(郑风·<a href="https://ctext.org/book-of-poetry/zi-jin/zhs?searchu=子衿&searchmode=showall#result" target="_blank">子衿</a>)
+	(诗经·郑风·<a href="https://ctext.org/book-of-poetry/zi-jin/zhs?searchu=子衿&searchmode=showall#result" target="_blank">子衿</a>)
 	<br>
 	<audio controls>
 		<source src="music/ZiJin.mp3" type="audio/mpeg">
@@ -183,7 +196,7 @@
 <h2>🥳 逻辑｜Logic </h2>
 <div>
 	
-<figure>
+<figure style="text-align: center;">
 	<a href="image/do-you-like-logic.jpg" target="_blank">
 		<img src="image/do-you-like-logic_thumb.jpg" alt="do you like logic?" width="280"/>
 	</a>
@@ -198,10 +211,16 @@
 	I love logic, especially <em>Modal Logic</em> and its “peripherals", 
 	and “<em>I want to be a logician</em>".
 </p>
+
+<blockquote>
+    The fear of stumbling makes the mind hold tightly onto the handrail of logic. (André Gide, <em>Les Nouvelles Nourritures</em>) 
+</blockquote>
+
 <blockquote>
 	If people do not believe that mathematics is simple,
 	it is only because they do not realize how complicated life is. (von Neumann)
 </blockquote>
+
 <blockquote>
 	If you zip through a page in less than an hour, you are probably going too fast.(Sheldon Axler: <em>Linear Algebra Done Right</em>)
 </blockquote>
@@ -232,7 +251,7 @@
 		<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsMTAsWzAsMSwiXFxjb2xvcnt0ZWFsfSBcXG1hdGhjYWx7SH0iXSxbMSwwLCJcXGNvbG9ye3RlYWx9XFxtYXRoY2Fse0h9KEApIl0sWzEsMiwiXFxtYXRoY2Fse0h9KFxcZG93bmFycm93KSJdLFsyLDEsIlxcbWF0aGNhbHtIfShAXFwhXFxkb3duYXJyb3cpIl0sWzMsMSwiXFxtYXRoY2Fse0h9KFxcZG93bmFycm93XFwhXFxtYXRoc2Z7RX0pIl0sWzQsMSwiXFxtYXRoY2Fse0h9KEBcXGV4aXN0cykiXSxbNSwxLCJcXG1hdGhjYWx7SH0oQFxcIVxcZG93bmFycm93XFwhXFxleGlzdHNcXG1hdGhzZntFfSkiXSxbNSwwLCJcXG1hdGhybXtGT0x9Il0sWzIsMCwiXFxjb2xvcnt0ZWFsfSBcXG1hdGhjYWx7SH0oXFxtYXRoc2Z7RX0pIl0sWzIsMiwiXFxtYXRoY2Fse0h9KFxcZXhpc3RzKSJdLFswLDJdLFszLDRdLFs0LDUsIiIsMix7ImN1cnZlIjotMn1dLFs1LDYsIiIsMix7ImN1cnZlIjotMn1dLFs2LDcsIiIsMix7ImN1cnZlIjotMX1dLFs3LDYsIiIsMix7ImN1cnZlIjotMX1dLFs1LDQsIiIsMix7ImN1cnZlIjotMn1dLFs2LDUsIiIsMix7ImN1cnZlIjotMn1dLFs4LDRdLFsxLDhdLFsxLDNdLFsyLDNdLFs5LDRdLFsyLDldLFswLDFdXQ==&embed" width="330" height="200" style="border-radius: 8px; border: none;"></iframe>
 	</li>
 
-	<li>Notes on <a>AAT (Abstract Argumentation Theory)</a>
+	<li>Notes on <a>AAT</a> (Abstract Argumentation Theory)
 	</li>
 
 	<li>Notes on 
@@ -328,8 +347,8 @@
 </details>
 
 
-<!-- 默认展开列表 -->
-<details open>
+<!-- 默认展开列表: <details open> -->
+<details>
     <summary>Some Courses</summary>
 <ul>
 	<li>
@@ -383,33 +402,40 @@
 </ul>
 
 <div>
-    <!-- 	
+    
 	<p>
 		<b>DuoDuo</b> $^\sim\omega^\sim$ is a very cute kitty, he is my partner, my all tenderness and the fluffy dream! You can click <a href="https://nixnehc.github.io/misc/duoduo/" target="_blank">here</a> to find more information about him.
 	</p> 
-    -->
+    
 	<!-- 	
 	小多多是一只可爱的小猫咪，是我的小伙伴，我的软塌塌，我生命中的毛绒绒！
 	你可以在 <a href="https://nixnehc.github.io/misc/duoduo/" target="_blank">这里</a> 找到关于他的一切。 
 	-->
-	<!-- 
-    <center>
+	
+    <figure style="text-align: center;">
 		<a href="image/duoduo/DuoduoHead01.jpg" target="_blank" title="click for original image">
-			<img src="image/duoduo/DuoduoHead01_thumb.jpg" alt="这是一张多多的小多头" width="300">
+			<img src="image/duoduo/DuoduoHead01_thumb.jpg" width="300">
 		</a>
+        <figcaption>a cute head $^\geq \lor ^\leq$</figcaption>  
+            
 		<br>
 		<a href="image/duoduo/duoduo-body.jpeg" target="_blank" title="click for original image">
-			<img src="image/duoduo/duoduo-body-thumb.jpeg" alt="这是一张小多头" width="300">
+			<img src="image/duoduo/duoduo-body-thumb.jpeg" width="300">
 		</a>
-	</center> 
-    -->
+        <figcaption>Such a fluffy little DuoDuo!</figcaption> 
+	</figure> 
 
 
-	<!-- <ul>
+
+	<ul>
 		<li>
 			<a href="https://bento.me/duoduo-with-me" target="_blank">小多多精选集</a>上线啦 👏👏
 		</li>
-	</ul> -->
+
+        <li>
+            现在是 2025-05-21 日的晚上，我得知小多多已经永远的离开了😭😭😭 含哀恸呼，魂兮归来!  
+        </li>
+	</ul>
 
 </div>
 
@@ -418,7 +444,7 @@
 
 
 <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->	
-<h2><img src="image/cat_1.png" alt="" width="30">  
+<h2><img src="image/cat-butt-100.png"  width="30">  
 	胡言乱语｜Balderdash </h2>
 <div>
 	<ol>
@@ -426,7 +452,7 @@
 			<center>
 				<img src="image/棒棒小汪汪.jpg" alt="" width="150">
 			</center>
-		「哈，天地之间有许多事，是你的哲学里所没有梦想到的！」
+		「哈，天地之间有许多事，是你的哲学里所没有梦想到的呢！」
 		</li>
 
 		<li>现在是 2023-12-26，我寻找到了一个名字 --- <em>Amaya</em></li>
@@ -506,14 +532,14 @@
 
 <br>
 
-<center>
+<figure style="text-align: center;">
 	<a href="https://github.com/nixnehc" target="_blank" title="my github chart">
 		<img src="https://ghchart.rshah.org/nixnehc" alt="My GitHub  chart" width="300">
 	</a>
 	<br>
 	<!-- (my blue-themed github chart) -->
     (my github chart)
-</center>
+</figure> 
 
 
 </div>
@@ -621,36 +647,23 @@
 		</ul>
 	</li>
 
-    Conference:     
-    <table border="1" cellpadding="5" cellspacing="2">
-        <tr>
-          <th>Conference</th>
-          <!-- <th>DDL</th> 
-          <th>Participation</th> -->
-        </tr>
-
-        <tr>
-          <td><a href="https://www.golori.org/">LORI</a></td>
-          <!-- <td>March ~ May</td>
-          <td>October</td> -->
-        </tr>
-
-        <tr>
-          <td><a href="http://www.tark.org/">TARK</a></td>
-          <!-- <td>Francisco Chang</td>
-          <td>Mexico</td> -->
-        </tr> 
-
-        <tr>
-            <td><a href="http://www.aiml.net/">AiML</a></td>
-        </tr>
-
-        <tr>
-            <td><a href="https://www.tableaux-ar.org/">TABLEAUX</a></td>
-        </tr>
-      </table>  
-    
 </ul>
+
+
+<!-- Logic Conferences -->
+<ul>
+<li>Conference:</li>
+    <ul>
+        <li><a href="https://www.golori.org/">LORI</a></li>
+
+        <li><a href="http://www.tark.org/">TARK</a></li>
+
+        <li><a href="http://www.aiml.net/">AiML</a></li>
+
+        <li><a href="https://www.tableaux-ar.org/">TABLEAUX</a></li>
+    </ul>
+</ul>
+
 
 
 <!-- logicians -->
@@ -953,7 +966,7 @@ Analytics:
 <!-- back to bottom -->
 <div id="back_to_bot">
 	<p>
-	<a href="#bottom" title="some links"><img src="image/cat-butt-100.png" width="30"></a>
+	<a href="#bottom" title="some links"><img src="image/cat-walk.gif" width="30"></a>
 	</p>
 </div>
 
@@ -982,7 +995,7 @@ Analytics:
 	&copy; 2020 - 2025. 
 	
 	&emsp;&emsp;
-	Made with 🧡 by Xin Chen
+	Made with 🧡 by Xin 
 	
 	&emsp;&emsp;
 	Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
