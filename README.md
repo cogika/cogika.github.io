@@ -1,5 +1,7 @@
 
-***cogika*** $\coloneqq$ ***c***at/c**o**ffee + l***ogika***
+***cogika*** $\coloneqq$ ***c***at + l***ogika***
+
+('C' is also the initial of my family name.)
 
 ----
 
