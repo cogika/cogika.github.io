@@ -1,0 +1,166 @@
+<!-- 
+    end page for courses
+    url: https://cogika.github.io/end.html 
+    This page learned from Carlos Areces but using CSS
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8>
+    <meta name=description content="end of the course">
+    <title>The End</title>
+    <style>
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            /* white-space: nowrap; */
+            box-sizing: border-box;
+            background: #000000;
+            padding: 10px;
+            
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 70s linear infinite;
+        }
+        @keyframes marquee {
+            0%   { transform: translateY(100%); }
+            100% { transform: translateY(-100%); }
+        }
+        /* 悬停暂停 */
+        /* .marquee:hover .marquee-content {
+            animation-play-state: paused;
+        } */
+        
+        /* 所有状态移除下划线 */
+        a {text-decoration: none;}
+    
+        /* 默认状态 */
+        a:link {color: #82e0aa; /* 绿色 */ }
+
+        /* 访问过后 */
+        a:visited {
+            color: #f1948a; /* 紫色 */ }
+
+        /* 鼠标悬停 */
+        a:hover {
+            color: #FF9800; /* 橙色 */  }
+    </style>
+</head>
+
+
+<body bgcolor=#000000 text=#ffffff link=#0000ff vlink=#ff0000 alink=#ffff00 style=font-family:Verdana;font-size:16pt>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<center>
+<div class="marquee">
+<div class="marquee-content">
+
+<!-- BGMusic -->
+<audio id="bgMusic" loop autoplay muted>
+    <source src="music/Cheer_Chen_XiaoGe.mp3" type="audio/mpeg">
+</audio>
+<script>
+    // 尝试自动播放（静音模式）
+    document.addEventListener('click', () => {
+        const music = document.getElementById('bgMusic');
+        if (music.muted) {
+            music.muted = false;
+            alert("音乐已开启！");
+        }
+    }, { once: true }); // 只需点击一次
+</script>
+
+<!-- --------------------------------- -->
+<br>
+<b>The Cast</b>
+<br><br><br>
+p1, p2, ..., pn
+ . . . . . . . . . . . . . . . . . . . .
+as "Propositional Symbols" 
+<br><br>
+¬, v, ^, → 
+ . . . . . . . . . . . . . . . . . . . .
+as "The Booleans" 
+<br><br>
+‹R› 
+ . . . . . . . . . . . . . . . . . . . .
+as "The Diamond Modality" 
+<br><br>
+[R] 
+ . . . . . . . . . . . . . . . . . . . .
+as "The Box Modality" 
+<br><br>
+[U] 
+ . . . . . . . . . . . . . . . . . . . .
+as "The Universal Modality" 
+<br><br>
+n1, n2, ..., nk
+ . . . . . . . . . . . . . . . . . . . .
+as "Nominals" 
+<br><br>
+:
+ . . . . . . . . . . . . . . . . . . . .
+as "At"
+<br><br>
+‹R*› 
+ . . . . . . . . . . . . . . . . . . . .
+as "The Reflexive Transitive Closure" 
+<br><br>
+«n» 
+ . . . . . . . . . . . . . . . . . . . .
+as "The First Order Quantifier" 
+<br><br>
+«R» and «P» 
+ . . . . . . . . . . . . . . . . . . . .
+as "Second Order Quantifiers" 
+<br><br><br><br>
+
+
+<!-- ================== -->
+<b>Thanks</b>
+<br><br>
+Lecturer for his works.
+<br><br>
+The Students for their time, their questions, and their ideas. 
+<br><br>
+
+<br><br>—¤¤¤—<br><br>
+@202x Made with ❤️ by all of us 
+<br><br>—¤¤¤—<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>—¤¤¤¤¤—<br>
+Background Music
+<br>—¤¤¤—<br>
+<a href="https://www.bilibili.com/video/BV1kW4y1P7bS/" target="_blank">陈绮贞:《小小校歌》</a> <br>—¤¤¤—<br>
+我有個她，美麗風華 <br>
+人人都說，中珠之花 <br>
+我有個他，瀟灑多情 <br>
+人人都說，中國之星 <br>
+我願陪她，追逐山林 <br>
+我願陪他，攜手天涯 <br>
+共看月亮，共數星星
+<br>—¤¤¤¤¤—<br>
+</center>
+
+
+
+
+</div>
+</div>
+</center>
+
+</body>
+</html>
