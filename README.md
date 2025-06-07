@@ -1,5 +1,5 @@
 
-***cogika*** $\coloneqq$ ***c***at + l***ogika***
+***cogika*** = ***c***at + l***ogika***
 
 ('C' is also the initial of my family name.)
 
